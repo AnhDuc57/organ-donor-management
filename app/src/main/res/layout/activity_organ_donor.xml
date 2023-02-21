@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login1"
+    android:orientation="vertical"
+    tools:context=".OrganDonorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBackDisplay"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddPeople"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="285dp"
+            android:background="@drawable/ic_baseline_person_add_24"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:spinnerMode="dropdown" />
+
+   <ListView
+       android:id="@+id/listViewOrganDonor"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </ListView>
+
+
+</LinearLayout>
